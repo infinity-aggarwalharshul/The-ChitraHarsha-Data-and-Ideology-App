@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- SEO & Meta Data (Commercial Ready) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The ChitraHarsha VPK: Anant-Drishti - The World's Most Powerful AI Data Ecosystem. Featuring 10T SQL, Ideology Validation, and Quantum Compression."
+    />
+    <meta
+      name="keywords"
+      content="AI, Big Data, Innovation, Patent Validator, 10T SQL, ChitraHarsha, VPK Ventures, Indian Startup"
+    />
+    <meta name="author" content="The ChitraHarsha VPK Ventures Pvt Ltd" />
+    <meta
+      name="copyright"
+      content="© 2025 The ChitraHarsha VPK Ventures Pvt Ltd. All Rights Reserved."
+    />
+    <meta name="robots" content="index, follow" />
+    <title>
+      The ChitraHarsha VPK: Anant-Drishti v5.0 | Enterprise AI & Innovation Lab
+    </title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700&family=Tiro+Devanagari+Sanskrit&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Rajdhani", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+              display: ["Orbitron", "sans-serif"],
+              sanskrit: ["Tiro Devanagari Sanskrit", "serif"],
+            },
+            colors: {
+              "neon-blue": "#00f3ff",
+              "neon-purple": "#bc13fe",
+              "neon-gold": "#ffd700",
+              "dark-bg": "#050b14",
+              glass: "rgba(15, 23, 42, 0.85)",
+              success: "#00ff9d",
+              danger: "#ff4b4b",
+            },
+            animation: {
+              "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              glow: "glow 3s ease-in-out infinite alternate",
+              scan: "scan 3s linear infinite",
+              float: "float 6s ease-in-out infinite",
+            },
+            keyframes: {
+              glow: {
+                "0%": { boxShadow: "0 0 5px #00f3ff, 0 0 10px #00f3ff" },
+                "100%": { boxShadow: "0 0 20px #00f3ff, 0 0 30px #bc13fe" },
+              },
+              scan: {
+                "0%": { top: "0%", opacity: 0 },
+                "50%": { opacity: 1 },
+                "100%": { top: "100%", opacity: 0 },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        background-color: #020617;
+        color: #e2e8f0;
+        background-image: linear-gradient(
+            rgba(188, 19, 254, 0.03) 1px,
+            transparent 1px
+          ),
+          linear-gradient(90deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        overflow-x: hidden;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #00f3ff, #bc13fe);
+        border-radius: 4px;
+      }
+
+      /* Glassmorphism */
+      .glass-card {
+        background: rgba(10, 10, 20, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+      }
+
+      .neon-text {
+        text-shadow: 0 0 15px rgba(0, 243, 255, 0.6);
+      }
+
+      .app-section {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+      }
+      .app-section.active {
+        display: block;
+        opacity: 1;
+        animation: fadeIn 0.5s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Trademark Symbol */
+      .tm-symbol {
+        font-size: 0.6em;
+        vertical-align: super;
+        color: #ffd700;
+      }
+    </style>
+  </head>
+  <body
+    class="antialiased min-h-screen flex flex-col font-body selection:bg-neon-gold selection:text-black"
+  >
+    <!-- Top Status Bar (Security Monitor) -->
+    <div
+      class="bg-black border-b border-gray-800 py-1.5 px-4 flex justify-between items-center text-[10px] md:text-xs font-mono sticky top-0 z-50"
+    >
+      <div class="flex items-center gap-4">
+        <span class="text-success flex items-center"
+          ><i class="fas fa-lock mr-2"></i> QUANTUM ENCRYPTION: ONLINE</span
+        >
+        <span class="hidden md:flex text-gray-400 items-center"
+          ><i class="fas fa-server mr-2"></i> 10T SQL: ACTIVE</span
+        >
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-neon-purple animate-pulse"
+          ><i class="fas fa-sync mr-2"></i> AUTO-UPDATE: LIVE</span
+        >
+        <span class="text-neon-gold font-bold tracking-wider"
+          >MADE IN INDIA 🇮🇳</span
+        >
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="sticky top-8 w-[96%] mx-auto z-40 glass-card rounded-xl px-6 py-3 border-t border-white/10 shadow-[0_0_25px_rgba(0,243,255,0.15)] mt-4 mb-8"
+    >
+      <div class="flex items-center justify-between">
+        <!-- Logo Area -->
+        <div
+          class="flex items-center gap-3 cursor-pointer group"
+          onclick="navigateTo('home')"
+        >
+          <div
+            class="w-12 h-12 bg-gradient-to-br from-neon-blue via-white to-neon-purple rounded-lg flex items-center justify-center text-black font-bold text-xl font-display shadow-[0_0_15px_rgba(188,19,254,0.5)] group-hover:rotate-6 transition-transform"
+          >
+            CH
+          </div>
+          <div class="leading-tight">
+            <span
+              class="block font-display text-lg font-bold text-white neon-text"
+              >The ChitraHarsha VPK<span class="tm-symbol">TM</span></span
+            >
+            <span
+              class="block text-[9px] text-neon-gold font-sanskrit tracking-[0.15em] uppercase"
+              >Anant-Drishti (Infinite Vision)</span
+            >
+          </div>
+        </div>
+
+        <!-- Desktop Links -->
+        <div
+          class="hidden xl:flex items-center gap-1 bg-black/30 rounded-full p-1 border border-white/5"
+        >
+          <button
+            onclick="navigateTo('home')"
+            class="nav-link px-4 py-2 rounded-full text-xs font-bold uppercase text-gray-300 hover:bg-white/10 hover:text-neon-blue transition-all"
+          >
+            Home
+          </button>
+          <button
+            onclick="navigateTo('innovation')"
+            class="nav-link px-4 py-2 rounded-full text-xs font-bold uppercase text-gray-300 hover:bg-white/10 hover:text-neon-purple transition-all"
+          >
+            <i class="fas fa-lightbulb mr-1"></i> Ideology Lab
+          </button>
+          <button
+            onclick="navigateTo('blogs')"
+            class="nav-link px-4 py-2 rounded-full text-xs font-bold uppercase text-gray-300 hover:bg-white/10 hover:text-neon-gold transition-all"
+          >
+            SEO Blogs
+          </button>
+          <button
+            onclick="navigateTo('dashboard')"
+            class="nav-link px-4 py-2 rounded-full text-xs font-bold uppercase text-gray-300 hover:bg-white/10 hover:text-neon-blue transition-all"
+          >
+            Data Studio
+          </button>
+          <button
+            onclick="navigateTo('ai-hub')"
+            class="nav-link px-4 py-2 rounded-full text-xs font-bold uppercase text-gray-300 hover:bg-white/10 hover:text-neon-blue transition-all"
+          >
+            AI Train
+          </button>
+        </div>
+
+        <!-- Login Button -->
+        <div class="flex gap-3">
+          <button
+            onclick="openModal('loginModal')"
+            class="bg-gradient-to-r from-neon-blue to-blue-600 text-black px-6 py-2 rounded-lg text-xs font-bold shadow-lg transition-all transform hover:scale-105 border border-neon-blue/50"
+          >
+            <i class="fas fa-fingerprint mr-2"></i> Login / Register
+          </button>
+          <button class="xl:hidden text-white" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden xl:hidden border-t border-gray-700 mt-4 pt-4 grid grid-cols-2 gap-2"
+      >
+        <button
+          onclick="navigateTo('home')"
+          class="text-left p-2 text-gray-300"
+        >
+          Home
+        </button>
+        <button
+          onclick="navigateTo('innovation')"
+          class="text-left p-2 text-gray-300"
+        >
+          Ideology Lab
+        </button>
+        <button
+          onclick="navigateTo('blogs')"
+          class="text-left p-2 text-gray-300"
+        >
+          Blogs
+        </button>
+        <button
+          onclick="navigateTo('dashboard')"
+          class="text-left p-2 text-gray-300"
+        >
+          Data Studio
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main
+      class="flex-grow px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full z-10 pb-12"
+    >
+      <!-- SECTION: HOME -->
+      <div id="home" class="app-section active">
+        <div class="text-center py-16 relative">
+          <div
+            class="inline-flex items-center px-4 py-1.5 mb-6 rounded-full border border-neon-gold/30 bg-yellow-900/10 text-neon-gold text-[10px] font-bold tracking-[0.2em] uppercase animate-pulse-slow"
+          >
+            <i class="fas fa-bolt mr-2"></i> v5.0 Commercial Ready • Patent
+            Pending
+          </div>
+
+          <h1
+            class="text-5xl md:text-7xl font-display font-bold mb-6 leading-tight text-white"
+          >
+            World's Most
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple neon-text"
+              >Powerful</span
+            ><br />
+            Data & Ideology Engine
+          </h1>
+
+          <p
+            class="mt-4 max-w-3xl mx-auto text-lg text-gray-400 font-light leading-loose"
+          >
+            Transforming Raw Data into Global Solutions. Featuring
+            <strong>Ideology Validation</strong> via Google Scholar,
+            <strong>10 Trillion SQL</strong> support, and ultra-lightweight
+            <strong>Quantum Data Compression</strong>.
+          </p>
+
+          <div class="mt-10 flex flex-wrap justify-center gap-4">
+            <button
+              onclick="navigateTo('innovation')"
+              class="px-8 py-4 rounded-xl bg-white text-black font-bold hover:bg-gray-200 transition-all shadow-[0_0_25px_rgba(255,255,255,0.3)] flex items-center gap-2"
+            >
+              <i class="fas fa-search"></i> Validate Idea
+            </button>
+            <button
+              onclick="navigateTo('registration')"
+              class="px-8 py-4 rounded-xl border border-neon-purple bg-purple-900/10 text-white font-bold hover:bg-neon-purple hover:text-black transition-all flex items-center gap-2"
+            >
+              <i class="fas fa-briefcase"></i> Careers
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION: INNOVATION LAB (Ideology Validator) -->
+      <div id="innovation" class="app-section">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-display font-bold text-white">
+              Ideology & Novelty Validator<span class="tm-symbol">TM</span>
+            </h2>
+            <p class="text-gray-400 text-sm mt-2">
+              Powered by Google Scholar & Global Patent Database APIs
+              (Simulated)
+            </p>
+          </div>
+
+          <div
+            class="glass-card p-8 rounded-3xl border border-neon-blue/30 relative overflow-hidden"
+          >
+            <div
+              class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-neon-blue via-white to-neon-purple animate-pulse"
+            ></div>
+
+            <div class="space-y-6">
+              <div>
+                <label
+                  class="block text-xs uppercase font-bold text-neon-blue mb-2"
+                  >Enter Your Innovative Idea / Concept</label
+                >
+                <textarea
+                  id="idea-input"
+                  rows="4"
+                  class="w-full bg-gray-900/50 border border-gray-600 rounded-xl p-4 text-white focus:border-neon-blue outline-none transition-all"
+                  placeholder="e.g., A quantum-based water filtration system for rural India..."
+                ></textarea>
+              </div>
+
+              <div class="flex gap-4">
+                <button
+                  onclick="IdeologyEngine.validate()"
+                  class="flex-1 bg-gradient-to-r from-neon-blue to-blue-600 text-black font-bold py-4 rounded-xl hover:shadow-lg transition-all"
+                >
+                  <i class="fas fa-microscope mr-2"></i> Check Novelty Score
+                </button>
+                <button
+                  class="px-6 bg-gray-800 border border-gray-600 rounded-xl hover:bg-gray-700 text-white"
+                >
+                  <i class="fas fa-filter"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Results Area (Hidden Initially) -->
+            <div
+              id="idea-result"
+              class="hidden mt-8 pt-8 border-t border-gray-700 animate-fadeIn"
+            >
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-black/40 p-6 rounded-xl border border-gray-700">
+                  <div class="text-xs text-gray-500 uppercase mb-2">
+                    Novelty Score
+                  </div>
+                  <div
+                    class="text-5xl font-display font-bold text-neon-gold mb-2"
+                  >
+                    94%
+                  </div>
+                  <div class="text-xs text-green-400">
+                    <i class="fas fa-check-circle mr-1"></i> High Patent
+                    Potential
+                  </div>
+                  <div class="w-full bg-gray-800 h-2 rounded-full mt-4">
+                    <div class="bg-neon-gold h-2 rounded-full w-[94%]"></div>
+                  </div>
+                </div>
+                <div
+                  class="bg-black/40 p-6 rounded-xl border border-gray-700 font-mono text-xs space-y-2 text-gray-400 h-48 overflow-y-auto custom-scrollbar"
+                >
+                  <div class="text-neon-blue">[SEARCH LOG]</div>
+                  <div>> Querying Google Scholar... Done.</div>
+                  <div>> Checking USPTO Database... Done.</div>
+                  <div>> Checking Indian Patent Office... Done.</div>
+                  <div>> 2 Similar abstracts found (Low Relevance).</div>
+                  <div>> Semantic Analysis: Transformative Idea.</div>
+                  <div>> Recommendation: Proceed to Drafting.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION: SEO BLOGS (1500 Word Simulation) -->
+      <div id="blogs" class="app-section">
+        <div class="flex justify-between items-end mb-8">
+          <div>
+            <h2 class="text-3xl font-display font-bold text-white">
+              Knowledge Hub
+            </h2>
+            <p class="text-gray-400 text-sm">
+              SEO Optimized • 1500+ Words • Auto-Updated
+            </p>
+          </div>
+          <div
+            class="text-xs text-neon-gold border border-neon-gold px-3 py-1 rounded-full"
+          >
+            <i class="fas fa-star mr-1"></i> SEO Rank: #1
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Blog Card 1 -->
+          <div
+            class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div class="h-48 bg-gray-800 relative overflow-hidden">
+              <img
+                src="https://picsum.photos/seed/ai/600/400"
+                alt="AI Technology"
+                class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute top-4 left-4 bg-black/70 px-2 py-1 rounded text-[10px] font-bold text-white"
+              >
+                TECHNOLOGY
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-white mb-3 group-hover:text-neon-blue transition-colors"
+              >
+                The Quantum Leap: Transforming 10T SQL Data
+              </h3>
+              <p class="text-sm text-gray-400 mb-4 line-clamp-3">
+                In this comprehensive 1500-word analysis, we explore how
+                Anant-Drishti utilizes quantum encryption to manage 10 trillion
+                SQL rows. We delve into the specifics of blockchain immutability
+                and...
+              </p>
+              <button
+                class="text-neon-purple text-sm font-bold hover:underline"
+              >
+                Read Full Article <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Blog Card 2 -->
+          <div
+            class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div class="h-48 bg-gray-800 relative overflow-hidden">
+              <img
+                src="https://picsum.photos/seed/india/600/400"
+                alt="Indian Innovation"
+                class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute top-4 left-4 bg-black/70 px-2 py-1 rounded text-[10px] font-bold text-white"
+              >
+                INNOVATION
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-white mb-3 group-hover:text-neon-blue transition-colors"
+              >
+                Why "Made in India" AI is the Future
+              </h3>
+              <p class="text-sm text-gray-400 mb-4 line-clamp-3">
+                India is rapidly becoming the global hub for AI. The
+                ChitraHarsha VPK Ventures is leading this charge. This detailed
+                report analyzes the economic impact of domestic AI
+                development...
+              </p>
+              <button
+                class="text-neon-purple text-sm font-bold hover:underline"
+              >
+                Read Full Article <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Blog Card 3 -->
+          <div
+            class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div class="h-48 bg-gray-800 relative overflow-hidden">
+              <img
+                src="https://picsum.photos/seed/code/600/400"
+                alt="Data Security"
+                class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute top-4 left-4 bg-black/70 px-2 py-1 rounded text-[10px] font-bold text-white"
+              >
+                SECURITY
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-white mb-3 group-hover:text-neon-blue transition-colors"
+              >
+                Dark Web Defense Strategies 2025
+              </h3>
+              <p class="text-sm text-gray-400 mb-4 line-clamp-3">
+                Cyber threats are evolving. Our "Anant-Drishti" protocol
+                provides active phishing and malware monitoring. Learn about the
+                layers of security protecting your raw data...
+              </p>
+              <button
+                class="text-neon-purple text-sm font-bold hover:underline"
+              >
+                Read Full Article <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION: DATA STUDIO (With Compression) -->
+      <div id="dashboard" class="app-section">
+        <div class="glass-card p-8 rounded-3xl border border-gray-700">
+          <div class="flex flex-col md:flex-row justify-between mb-8">
+            <div>
+              <h2 class="text-2xl font-display font-bold text-white">
+                Data Studio
+                <span class="text-xs bg-neon-blue text-black px-2 rounded"
+                  >v5.0</span
+                >
+              </h2>
+              <p class="text-gray-400 text-xs mt-1">
+                Lightweight Quantum Compression Enabled
+              </p>
+            </div>
+            <button
+              onclick="DataEngine.upload()"
+              class="bg-gray-800 border border-gray-600 text-white px-6 py-2 rounded-xl hover:bg-gray-700 text-sm font-bold transition-all"
+            >
+              <i class="fas fa-upload mr-2"></i> Upload CSV (Auto-Compress)
+            </button>
+          </div>
+
+          <!-- Compression Visualizer -->
+          <div
+            id="compression-log"
+            class="hidden mb-6 bg-black/50 p-4 rounded-xl border border-neon-blue/30"
+          >
+            <div class="flex justify-between text-xs text-gray-400 mb-2">
+              <span>Original Size: <span class="text-white">500 MB</span></span>
+              <span
+                >Compressed Size:
+                <span class="text-neon-blue font-bold">2.4 MB</span></span
+              >
+            </div>
+            <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+              <div
+                class="bg-gradient-to-r from-neon-blue to-neon-purple h-full w-[0%] transition-all duration-1000"
+                id="comp-bar"
+              ></div>
+            </div>
+            <div class="text-[10px] text-neon-purple mt-2 text-right">
+              Quantum Compression Ratio: 99.5%
+            </div>
+          </div>
+
+          <!-- Chart Area -->
+          <div
+            class="h-[400px] bg-gray-900/50 rounded-xl relative p-4 border border-gray-700"
+          >
+            <canvas id="mainChart"></canvas>
+            <div
+              id="empty-chart"
+              class="absolute inset-0 flex flex-col items-center justify-center text-gray-600"
+            >
+              <i class="fas fa-cube text-5xl mb-4 opacity-20 animate-float"></i>
+              <span class="text-sm uppercase tracking-widest"
+                >Waiting for Data Stream</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION: ADMIN DASHBOARD (Strict PDF Compliance) -->
+      <div id="admin-dashboard" class="app-section">
+        <div
+          class="max-w-6xl mx-auto glass-card p-8 rounded-3xl border border-red-900/40 bg-gradient-to-b from-gray-900 to-black"
+        >
+          <div
+            class="flex justify-between items-center mb-8 border-b border-gray-800 pb-4"
+          >
+            <div>
+              <h2 class="text-2xl font-display font-bold text-white">
+                Founder's Dashboard
+              </h2>
+              <p class="text-red-500 text-xs font-mono">
+                <i class="fas fa-fingerprint mr-1"></i> BIOMETRIC AUTHENTICATED
+              </p>
+            </div>
+            <div class="text-right">
+              <div class="text-xs text-gray-400 uppercase">Total Employees</div>
+              <div class="text-3xl font-bold text-white">330</div>
+            </div>
+          </div>
+
+          <!-- Financials -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-gray-800/50 p-4 rounded-xl border border-gray-700">
+              <div class="text-xs text-gray-500 uppercase">Monthly Budget</div>
+              <div class="text-2xl font-bold text-neon-gold">₹ 2.26 Crore</div>
+            </div>
+            <div class="bg-gray-800/50 p-4 rounded-xl border border-gray-700">
+              <div class="text-xs text-gray-500 uppercase">Annual Budget</div>
+              <div class="text-2xl font-bold text-white">₹ 27.12 Crore</div>
+            </div>
+            <div class="bg-gray-800/50 p-4 rounded-xl border border-gray-700">
+              <div class="text-xs text-gray-500 uppercase">Next Disbursal</div>
+              <div class="text-xl font-bold text-success">Ready</div>
+            </div>
+          </div>
+
+          <!-- Detailed Table (PDF Specifics) -->
+          <div class="overflow-x-auto border border-gray-700 rounded-xl">
+            <table class="w-full text-sm text-left text-gray-400">
+              <thead class="text-xs text-white uppercase bg-gray-800">
+                <tr>
+                  <th class="px-6 py-4">Department</th>
+                  <th class="px-6 py-4">Count</th>
+                  <th class="px-6 py-4">Breakdown (PDF Spec)</th>
+                  <th class="px-6 py-4 text-right">Monthly Exp.</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-800 bg-gray-900/30">
+                <tr>
+                  <td class="px-6 py-4 font-bold text-white">HR Dept</td>
+                  <td class="px-6 py-4">39</td>
+                  <td class="px-6 py-4 text-xs">13 Jr, 13 Sr, 13 Head</td>
+                  <td class="px-6 py-4 text-right text-neon-gold">₹ 23 Lakh</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-bold text-white">Finance Dept</td>
+                  <td class="px-6 py-4">39</td>
+                  <td class="px-6 py-4 text-xs">13 Jr, 13 Sr, 13 Head</td>
+                  <td class="px-6 py-4 text-right text-neon-gold">₹ 23 Lakh</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-bold text-white">Data Analysts</td>
+                  <td class="px-6 py-4">39</td>
+                  <td class="px-6 py-4 text-xs">13 Jr, 13 Sr, 13 Head</td>
+                  <td class="px-6 py-4 text-right text-neon-gold">₹ 23 Lakh</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-bold text-white">
+                    Data Scientists
+                  </td>
+                  <td class="px-6 py-4">39</td>
+                  <td class="px-6 py-4 text-xs">13 Jr, 13 Sr, 13 Head</td>
+                  <td class="px-6 py-4 text-right text-neon-gold">₹ 23 Lakh</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-bold text-white">Brainstormers</td>
+                  <td class="px-6 py-4">39</td>
+                  <td class="px-6 py-4 text-xs">13 Jr, 13 Sr, 13 Head</td>
+                  <td class="px-6 py-4 text-right text-neon-gold">₹ 23 Lakh</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-bold text-white">Researchers</td>
+                  <td class="px-6 py-4">39</td>
+                  <td class="px-6 py-4 text-xs">13 Jr, 13 Sr, 13 Head</td>
+                  <td class="px-6 py-4 text-right text-neon-gold">₹ 23 Lakh</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-bold text-white">
+                    Interior Designers
+                  </td>
+                  <td class="px-6 py-4">13</td>
+                  <td class="px-6 py-4 text-xs">13 Employees</td>
+                  <td class="px-6 py-4 text-right text-neon-gold">₹ 23 Lakh</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-bold text-white">CEO Office</td>
+                  <td class="px-6 py-4">3</td>
+                  <td class="px-6 py-4 text-xs">3 Heads</td>
+                  <td class="px-6 py-4 text-right text-neon-gold">₹ 3 Lakh</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-bold text-white">Cleaning Staff</td>
+                  <td class="px-6 py-4">20</td>
+                  <td class="px-6 py-4 text-xs">7 Jr, 5 Sr, 5 Head, 3 Extra</td>
+                  <td class="px-6 py-4 text-right text-neon-gold">₹ 10 Lakh</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mt-6 text-right">
+            <button
+              onclick="alert('Disbursing ₹2.26 Cr via VPK Pay...\n\nSound Effect: Shankh Blowing... \n\nTransaction Complete!')"
+              class="bg-green-600 hover:bg-green-500 text-white px-6 py-3 rounded-xl font-bold shadow-lg transition-all"
+            >
+              Execute Salary Disbursal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION: CAREERS (Registration) -->
+      <div id="registration" class="app-section">
+        <div
+          class="max-w-2xl mx-auto glass-card p-8 rounded-3xl border-t-4 border-neon-blue"
+        >
+          <h2 class="text-2xl font-display font-bold text-white mb-6">
+            Join The Future
+          </h2>
+          <form
+            onsubmit="event.preventDefault(); alert('Application Submitted! ID Generated.');"
+            class="space-y-4"
+          >
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="w-full bg-gray-800/50 border border-gray-600 rounded-xl p-4 text-white"
+            />
+            <select
+              class="w-full bg-gray-800/50 border border-gray-600 rounded-xl p-4 text-white"
+            >
+              <option>Select Department (PDF List)</option>
+              <option>HR Department</option>
+              <option>Finance Department</option>
+              <option>Data Analyst Department</option>
+              <option>Data Scientist Department</option>
+              <option>Brainstorming Department</option>
+              <option>Research & Development</option>
+              <option>Interior Designers</option>
+              <option>Shareholders</option>
+              <option>CCTV / Security</option>
+            </select>
+            <button
+              class="w-full bg-neon-blue text-black font-bold py-4 rounded-xl"
+            >
+              Submit Application
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-800 py-8 mt-auto">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="text-2xl font-display font-bold text-white mb-2">
+          The ChitraHarsha VPK Ventures<span class="tm-symbol">TM</span>
+        </div>
+        <div class="text-xs text-gray-500 mb-6">
+          Pioneering AI-Driven Innovations | Anant-Drishti Protocol
+        </div>
+        <div class="text-[10px] text-gray-600 uppercase tracking-widest">
+          © 2025 The ChitraHarsha VPK Ventures Pvt Ltd. All Rights Reserved.<br />
+          ISO 27001 Certified | Patent Pending | Made In India
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODALS -->
+    <!-- Login Modal -->
+    <div
+      id="loginModal"
+      class="fixed inset-0 z-50 hidden flex items-center justify-center px-4 backdrop-blur-md"
+    >
+      <div
+        class="absolute inset-0 bg-black/90"
+        onclick="closeModal('loginModal')"
+      ></div>
+      <div
+        class="bg-gray-900 border border-gray-700 rounded-2xl max-w-md w-full z-10 p-6"
+      >
+        <h3 class="font-bold text-white text-xl mb-4">Secure Login</h3>
+        <div class="flex gap-2 mb-4">
+          <button
+            onclick="auth('User')"
+            class="flex-1 bg-gray-800 py-2 rounded text-xs hover:bg-gray-700 text-white"
+          >
+            User
+          </button>
+          <button
+            onclick="auth('Creator')"
+            class="flex-1 bg-gray-800 py-2 rounded text-xs hover:bg-gray-700 text-white"
+          >
+            Creator
+          </button>
+          <button
+            onclick="auth('Admin')"
+            class="flex-1 bg-gray-800 py-2 rounded text-xs hover:bg-gray-700 text-white"
+          >
+            Admin
+          </button>
+        </div>
+        <input
+          type="text"
+          placeholder="ID / Mobile"
+          class="w-full bg-black border border-gray-600 rounded-lg p-3 mb-3 text-white"
+        />
+        <button
+          class="w-full bg-neon-purple text-white font-bold py-3 rounded-lg"
+        >
+          Authenticate
+        </button>
+      </div>
+    </div>
+
+    <script>
+      // --- LOGIC CORE ---
+
+      // 1. Ideology Engine (Google Scholar Simulation)
+      const IdeologyEngine = {
+        validate: () => {
+          const input = document.getElementById("idea-input").value;
+          if (!input) return alert("Please enter an idea first.");
+
+          document.getElementById("idea-result").classList.remove("hidden");
+          // Scroll to result
+          document
+            .getElementById("idea-result")
+            .scrollIntoView({ behavior: "smooth" });
+        },
+      };
+
+      // 2. Data Engine (Compression)
+      const DataEngine = {
+        upload: () => {
+          const log = document.getElementById("compression-log");
+          const bar = document.getElementById("comp-bar");
+          const empty = document.getElementById("empty-chart");
+
+          log.classList.remove("hidden");
+          setTimeout(() => {
+            bar.style.width = "100%";
+          }, 100);
+
+          setTimeout(() => {
+            empty.classList.add("hidden");
+            DataEngine.renderChart();
+            alert(
+              "File Compressed Successfully (Ratio 99.5%) & Uploaded to 10T SQL Database."
+            );
+          }, 1500);
+        },
+        renderChart: () => {
+          const ctx = document.getElementById("mainChart").getContext("2d");
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: ["Raw Data", "Optimized", "AI Enhanced"],
+              datasets: [
+                {
+                  label: "Data Efficiency",
+                  data: [100, 1250, 4500],
+                  backgroundColor: ["#333", "#00f3ff", "#bc13fe"],
+                },
+              ],
+            },
+            options: { responsive: true, maintainAspectRatio: false },
+          });
+        },
+      };
+
+      // 3. Navigation & Auth
+      function navigateTo(id) {
+        document
+          .querySelectorAll(".app-section")
+          .forEach((el) => el.classList.remove("active"));
+        const target = document.getElementById(id);
+        target.classList.add("active");
+        window.scrollTo(0, 0);
+        document.getElementById("mobile-menu").classList.add("hidden");
+      }
+
+      function openModal(id) {
+        document.getElementById(id).classList.remove("hidden");
+      }
+      function closeModal(id) {
+        document.getElementById(id).classList.add("hidden");
+      }
+      function toggleMobileMenu() {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      }
+
+      function auth(role) {
+        closeModal("loginModal");
+        if (role === "Admin") {
+          // Simulate Fingerprint
+          setTimeout(() => {
+            alert("Fingerprint Scan Verified.");
+            navigateTo("admin-dashboard");
+          }, 500);
+        } else {
+          navigateTo("home");
+        }
+      }
+
+      // Auto-Run on Load
+      window.onload = () => {
+        console.log("System: Anant-Drishti v5.0 Loaded.");
+        console.log("Security: Quantum Encryption Keys Exchanged.");
+      };
+    </script>
+  </body>
+</html>
